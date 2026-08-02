@@ -2,7 +2,7 @@
 
 A modern, fully responsive portfolio website built to showcase my skills, projects, certifications, achievements, coding profiles, and resume.
 
-🔗 **Live Website:** https://your-vercel-link.vercel.app
+🔗 **Live Website:** https://portfolio-five-gamma-98.vercel.app/
 
 ---
 
@@ -126,7 +126,7 @@ A web application that allows users to register, track, and manage complaints ef
 
 **Name:** Pulivarthi Bhanu Upendra Harsha Kumar
 
-- 📧 Email: your-email@example.com
+- 📧 Email: your-bhanuupendra.06@gmail.com
 - 💼 LinkedIn: https://linkedin.com/in/your-profile
 - 💻 GitHub: https://github.com/Bhanu-02-102006
 
