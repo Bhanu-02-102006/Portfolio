@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Developer Portfolio | CSE (Data Science) Student</title>
+  <meta name="description" content="Personal portfolio website of a Final Year B.Tech Computer Science and Engineering (Data Science) student, showcasing software engineering, full stack development, and competitive programming achievements.">
+  <meta name="keywords" content="Portfolio, Software Engineer, B.Tech CSE, Data Science, Full Stack Developer, Java, MERN, React, Spring Boot, DSA">
+  <meta name="author" content="Your Name">
+  <meta name="robots" content="index, follow">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       PRELOADER & TRANSITIONS
+       ========================================================================== */ -->
+  <div id="preloader" class="preloader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-logo">DEVELOPER.DS</div>
+    </div>
+  </div>
+
+  <!-- Cursor Glow Glow Follower -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Background Canvas Particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Background Ambient Glowing Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER / NAVIGATION
+       ========================================================================== */ -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo">
+        PORTFOLIO<span class="logo-dot"></span>
+      </a>
+      
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#coding" class="nav-link">Profiles</a>
+        <a href="#certifications" class="nav-link">Certs</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div id="hamburger-toggle" class="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== */ -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <div class="hero-content reveal-left">
+          <div class="hero-welcome">
+            Hi there! <span>👋</span>
+          </div>
+          <!-- REPLACE WITH YOUR NAME -->
+          <h1 class="hero-name">PULIVARTHI BHANU UPENDRA HARSHA KUMAR</h1>
+          
+          <div class="hero-role-container">
+            <span class="hero-role" data-roles='[
+              "Final Year B.Tech CSE (Data Science)",
+              "Aspiring Software Engineer",
+              "Java Full Stack Developer",
+              "MERN Stack Developer",
+              "DSA Enthusiast",
+              "AI Enthusiast"
+            ]'></span>
+            <span class="typing-cursor"></span>
+          </div>
+          
+          <p class="hero-desc">
+            A passionate final-year Computer Science student specializing in Data Science. I bridge the gap between heavy data computations, robust backends, and responsive user experiences. Always exploring new algorithms, building complete web ecosystems, and solving algorithmic problems.
+          </p>
+          
+          <div class="hero-btns">
+            <!-- REPLACE WITH YOUR RESUME LINK -->
+              <a href="https://drive.google.com/file/d/1prRbSRi4Vyz03d_VcId4qGjzg0GJUSQN/view?usp=sharing"
+               target="_blank"
+               class="btn btn-primary">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                View Resume
+              </a>
+            <a href="#contact" class="btn btn-secondary">
+              Let's Connect <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+          
+          <div class="hero-socials">
+            <span class="social-label">Find Me On:</span>
+            <div class="social-list">
+              <a href="https://www.linkedin.com/in/bhanu-upendra-harsha-kumar-b66005359/" target="_blank" rel="noopener noreferrer" class="social-item" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Bhanu-02-102006" target="_blank" rel="noopener noreferrer" class="social-item" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <!-- LeetCode SVG -->
+              <a href="https://leetcode.com/u/bhanu__02/" target="_blank" rel="noopener noreferrer" class="social-item" title="LeetCode">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 18px; height: 18px;">
+                  <path d="M13.483 0a1.39 1.39 0 0 0-.961.411l-9.12 9.117a1.37 1.37 0 0 0-.415.962c.002.35.137.71.402.975l6.477 6.476a1.37 1.37 0 0 0 1.925-.012l8.9-8.9a1.37 1.37 0 0 0 .37-1.012 1.35 1.35 0 0 0-.43-.947l-6.242-6.241A1.39 1.39 0 0 0 13.483 0zM10.23 6.942H18v1.644h-7.77zm0 3.327h5.18v1.644h-5.18zm-2.2 3.328H14v1.644H8.03z"/>
+                </svg>
+              </a>
+              <!-- CodeChef SVG -->
+              <a href="https://www.codechef.com/users/bhanu_2006" target="_blank" rel="noopener noreferrer" class="social-item" title="CodeChef">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 18px; height: 18px;">
+                  <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1.88 12.753h-3.76v-1.88h3.76v1.88zm0-3.76h-3.76V9.113h3.76v1.88zM7.3 15.35c-.463 0-.84-.377-.84-.84V9.49c0-.463.377-.84.84-.84s.84.377.84.84v5.02c0 .463-.377.84-.84.84zm9.4 0c-.463 0-.84-.377-.84-.84V9.49c0-.463.377-.84.84-.84s.84.377.84.84v5.02c0 .463-.377.84-.84.84z"/>
+                </svg>
+              </a>
+              <!-- Codeforces SVG -->
+              <a href="https://codeforces.com/profile/upendra_06" target="_blank" rel="noopener noreferrer" class="social-item" title="Codeforces">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 18px; height: 18px;">
+                  <path d="M4.5 7.5h3v15h-3zm6-4.5h3v19.5h-3zm6 9h3v10.5h-3z"/>
+                </svg>
+              </a>
+              <a href="https://www.hackerrank.com/profile/23501A4448" target="_blank" rel="noopener noreferrer" class="social-item" title="HackerRank">
+                <i class="fa-brands fa-hackerrank"></i>
+              </a>
+              <a href="mailto:bhanuupendra.06@gmail.com" class="social-item" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-container reveal-right">
+    <div class="hero-image-wrapper">
+
+        <!-- Glow Effect -->
+        <div class="hero-image-glow"></div>
+
+        <!-- Profile Image -->
+        <div class="hero-profile-placeholder">
+            <img
+                src="./images/profile.jpg"
+                alt="Pulivarthi Bhanu Upendra Harsha Kumar"
+                class="hero-profile-img"
+            />
+        </div>
+
+    </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== */ -->
+  <section id="about" class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">My Journey & Focus</h2>
+        <p class="section-subtitle">A glimpse into who I am, what drives me, and the academic path I am pursuing.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            Hello! I am a final-year B.Tech student in <strong>Computer Science & Engineering</strong> with a specialized focus in <strong>Data Science</strong>. From my early college semesters, I recognized that writing software is not just about syntax—it's about engineering solutions that process complex inputs efficiently and deliver seamless digital experiences.
+          </p>
+          <p>
+            I thrive in the intersection of <strong>Software Development</strong> and <strong>Data Analysis</strong>. My academic curriculum has equipped me with a deep foundation in Data Structures, Algorithms, and Core Computer Science subjects, while my practical projects have pushed me to master both standard frontend systems and robust backend structures.
+          </p>
+          <p>
+            I am actively practicing problem solving on platforms like LeetCode and CodeChef, focusing heavily on continuous learning and adapting to fresh architectural challenges. Whether building full-stack applications with React and Spring Boot or scripting machine learning pipelines, I seek projects that demand performance and high scalability.
+          </p>
+        </div>
+
+        <!-- ABOUT CARD GRID -->
+        <div class="about-cards-grid reveal-right">
+          
+          <div class="about-card glass-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="about-card-title">College</div>
+            <div class="about-card-value">Prasad V Potluri Siddhartha Institute Of Technology</div>
+            <div class="about-card-subtext">Affiliated University</div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="about-card-title">Degree</div>
+            <div class="about-card-value">B.Tech CSE</div>
+            <div class="about-card-subtext">Data Science Specialization</div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="about-card-title">CGPA</div>
+            <div class="about-card-value">8.74 / 10</div>
+            <div class="about-card-subtext">Overall Academic Standing</div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div class="about-card-title">Graduation Year</div>
+            <div class="about-card-value">2027</div>
+            <div class="about-card-subtext">Final Year CSE Student</div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="about-card-title">Location</div>
+            <div class="about-card-value">Vijayawada,Andhra Pradesh</div>
+            <div class="about-card-subtext">India</div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-card-icon">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <div class="about-card-title">Languages</div>
+            <div class="about-card-value">English, Hindi</div>
+            <div class="about-card-subtext">Professional / Conversational</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDUCATION SECTION
+       ========================================================================== */ -->
+  <section id="education" class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">Academic Timeline</h2>
+        <p class="section-subtitle">An overview of my structured academic growth and milestones.</p>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- B.Tech Card -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">B.Tech - Computer Science & Engineering (Data Science)</h3>
+                <span class="timeline-org">Prasad v Potluri Siddhartha Institute Of Technology</span>
+              </div>
+              <span class="timeline-date">2023 - 2027</span>
+            </div>
+            <div class="timeline-score">CGPA: 8.74 / 10</div>
+            <p class="timeline-desc">
+              Currently pursuing a comprehensive curriculum focusing on Core CSE (DSA, Operating Systems, DBMS, Computer Networks, OOPs) along with Specialized Data Science courses (Machine Learning, Statistical Analysis, Data Engineering, AI Pipelines). Actively participating in college hackathons and coding societies.
+            </p>
+          </div>
+        </div>
+
+        <!-- Intermediate Card -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Intermediate (Class XII - MPC)</h3>
+                <span class="timeline-org">Narayana Junior College</span>
+              </div>
+              <span class="timeline-date">2021 - 2023</span>
+            </div>
+            <div class="timeline-score">Percentage:95.4 %</div>
+            <p class="timeline-desc">
+              Completed senior secondary education focusing on Physics, Chemistry, and Mathematics (MPC stream). Acquired strong mathematical frameworks, logical reasoning, and basic coding paradigms that laid the foundation for computer systems engineering.
+            </p>
+          </div>
+        </div>
+
+        <!-- Matriculation Card -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Secondary School (Class X)</h3>
+                <span class="timeline-org">Sri Chaitanya Techno School</span>
+              </div>
+              <span class="timeline-date">Completed 2021</span>
+            </div>
+            <div class="timeline-score">Percentage: 100 %</div>
+            <p class="timeline-desc">
+              Finished standard secondary board education with distinction. Engaged in science fairs, municipal level sports, and computer science fundamentals.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== */ -->
+  <section id="skills" class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">My toolbox consists of modern programming languages, development stacks, and engineering concepts.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Programming -->
+        <div class="skills-category glass-card reveal">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-code"></i> Programming Languages
+          </h3>
+          <div class="skills-list">
+            <div class="skill-card"><i class="fa-brands fa-java" style="color: #f89820;"></i> Java</div>
+            <div class="skill-card"><i class="fa-brands fa-python" style="color: #3776ab;"></i> Python</div>
+            <div class="skill-card"><i class="fa-solid fa-c" style="color: #a8b9cc;"></i> C Lang</div>
+            <div class="skill-card"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skills-category glass-card reveal">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-laptop-code"></i> Frontend Stack
+          </h3>
+          <div class="skills-list">
+            <div class="skill-card"><i class="fa-brands fa-html5" style="color: #e34f26;"></i> HTML5</div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i> CSS3</div>
+            <div class="skill-card"><i class="fa-brands fa-react" style="color: #61dafb;"></i> React.js</div>
+            <div class="skill-card"><i class="fa-brands fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</div>
+            <div class="skill-card">
+              <!-- Tailwind SVG -->
+              <svg viewBox="0 0 24 24" style="fill: #06b6d4;">
+                <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
+              </svg>
+              Tailwind CSS
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills-category glass-card reveal">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-server"></i> Backend Stack
+          </h3>
+          <div class="skills-list">
+            <div class="skill-card"><i class="fa-brands fa-node-js" style="color: #339933;"></i> Node.js</div>
+            <div class="skill-card"><i class="fa-solid fa-gears" style="color: #83cd29;"></i> Express.js</div>
+            <div class="skill-card"><i class="fa-solid fa-leaf" style="color: #6db33f;"></i> Spring Boot</div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skills-category glass-card reveal">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-database"></i> Database
+          </h3>
+          <div class="skills-list">
+            <div class="skill-card"><i class="fa-solid fa-envira" style="color: #47a248;"></i> MongoDB</div>
+            <div class="skill-card"><i class="fa-solid fa-table" style="color: #00758f;"></i> MySQL</div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category glass-card reveal">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools
+          </h3>
+          <div class="skills-list">
+            <div class="skill-card"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git</div>
+            <div class="skill-card"><i class="fa-brands fa-github" style="color: #fff;"></i> GitHub</div>
+            <div class="skill-card"><i class="fa-solid fa-laptop-file" style="color: #007acc;"></i> VS Code</div>
+            <div class="skill-card"><i class="fa-solid fa-mug-hot" style="color: #fe315d;"></i> IntelliJ IDEA</div>
+            <div class="skill-card"><i class="fa-solid fa-circle-play" style="color: #ff6c37;"></i> Postman</div>
+          </div>
+        </div>
+
+        <!-- Concepts -->
+        <div class="skills-category glass-card reveal">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-brain"></i> Core Concepts
+          </h3>
+          <div class="skills-list">
+            <div class="skill-card"><i class="fa-solid fa-diagram-project" style="color: #8b5cf6;"></i> DSA</div>
+            <div class="skill-card"><i class="fa-solid fa-cubes" style="color: #3b82f6;"></i> OOPs</div>
+            <div class="skill-card"><i class="fa-solid fa-database" style="color: #10b981;"></i> DBMS</div>
+            <div class="skill-card"><i class="fa-solid fa-microchip" style="color: #f43f5e;"></i> Operating Systems</div>
+            <div class="skill-card"><i class="fa-solid fa-network-wired" style="color: #eab308;"></i> Networks</div>
+            <div class="skill-card"><i class="fa-solid fa-cloud-arrow-up" style="color: #06b6d4;"></i> REST APIs</div>
+            <div class="skill-card"><i class="fa-solid fa-shield-halved" style="color: #d946ef;"></i> JWT Auth</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== */ -->
+  <section id="projects" class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">My Recent Builds</h2>
+        <p class="section-subtitle">A collection of custom applications solving real-world, data, and web engineering problems.</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: TalentMatch AI -->
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder-img">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z M16 4h4v2h-4z M16 8h6v2h-6z M16 12h4v2h-4z"/>
+              </svg>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">REST APIs</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">TalentMatch AI — AI-Powered Recruitment Platform</h3>
+            <p class="project-desc">An intelligent AI-powered recruitment platform designed to analyze candidate resumes, extract key technical competencies, recommend optimal job profiles, and detect mismatch indicators.</p>
+            <ul class="project-features">
+              <li>Analyzes resumes to extract skills and match candidate-job alignment.</li>
+              <li>Identifies missing skills to optimize job fits.</li>
+              <li>Implements AI-driven job fraud detection and secure user authentication.</li>
+              <li>Recruiter dashboards for job posting, application tracking, and candidate management.</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Bhanu-02-102006/TalentMatch-ai" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Complaint Management System -->
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder-img">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM13 14h-2v-2h2v2zm0-4h-2V6h2v4z"/>
+              </svg>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Complaint Management System</h3>
+            <p class="project-desc">A full-stack complaint registration portal allowing students to file issues online, track progress status, and enable administration staffs to manage resolution steps.</p>
+            <ul class="project-features">
+              <li>Responsive user interface for swift and frictionless complaint submissions.</li>
+              <li>Node.js and Express.js backend processing secure form inputs.</li>
+              <li>Integrated file upload system for submitting evidence or documentation.</li>
+              <li>Database logs keeping track of all complaints and processing states.</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Bhanu-02-102006/complaints-form" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Quiz Generator -->
+        <div class="project-card glass-card reveal">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder-img">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 11.9 12 12.5 12 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+              </svg>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">LLMs</span>
+              <span class="project-tag">RAG</span>
+              <span class="project-tag">Streamlit</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Quiz Generator — AI Based Application</h3>
+            <p class="project-desc">An AI application utilizing Large Language Models to automatically ingest context materials and formulate structured quiz questionnaires using a RAG pipeline.</p>
+            <ul class="project-features">
+              <li>Leverages Retrieval-Augmented Generation (RAG) to reference input texts.</li>
+              <li>Generates highly relevant multiple choice or description questions.</li>
+              <li>Streamlit interactive frontend for seamless context loading and quiz customization.</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Bhanu-02-102006/Quiz-Generator" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CODING PROFILES SECTION
+       ========================================================================== */ -->
+  <section id="coding" class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-tag">Competitive Coding</span>
+        <h2 class="section-title">Coding Profiles</h2>
+        <p class="section-subtitle">My tracking indices, problem counts, and ratings on top programming platforms.</p>
+      </div>
+
+      <div class="coding-grid">
+        
+        <!-- LeetCode Card -->
+        <div class="coding-card glass-card reveal">
+          <div class="coding-platform-icon">
+            <svg viewBox="0 0 24 24" fill="#F7A11D">
+              <path d="M13.483 0a1.39 1.39 0 0 0-.961.411l-9.12 9.117a1.37 1.37 0 0 0-.415.962c.002.35.137.71.402.975l6.477 6.476a1.37 1.37 0 0 0 1.925-.012l8.9-8.9a1.37 1.37 0 0 0 .37-1.012 1.35 1.35 0 0 0-.43-.947l-6.242-6.241A1.39 1.39 0 0 0 13.483 0zM10.23 6.942H18v1.644h-7.77zm0 3.327h5.18v1.644h-5.18zm-2.2 3.328H14v1.644H8.03z"/>
+            </svg>
+          </div>
+          <h3 class="coding-name">LeetCode</h3>
+          <div class="coding-stats">
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Rating</span>
+              <span class="coding-stat-val coding-rating-accent">1841</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Solved</span>
+              <span class="coding-stat-val">400+</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Max Rating</span>
+              <span class="coding-stat-val">1867</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Badge</span>
+              <span class="coding-stat-val">Knight</span>
+            </div>
+          </div>
+          <a href="https://leetcode.com/u/bhanu__02/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary coding-btn">
+            View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- CodeChef Card -->
+        <div class="coding-card glass-card reveal">
+          <div class="coding-platform-icon">
+            <svg viewBox="0 0 24 24" fill="#5B4636">
+              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1.88 14.753h-3.76v-1.88h3.76v1.88zm0-3.76h-3.76V9.113h3.76v1.88zM7.3 15.35c-.463 0-.84-.377-.84-.84V9.49c0-.463.377-.84.84-.84s.84.377.84.84v5.02c0 .463-.377.84-.84.84zm9.4 0c-.463 0-.84-.377-.84-.84V9.49c0-.463.377-.84.84-.84s.84.377.84.84v5.02c0 .463-.377.84-.84.84z"/>
+            </svg>
+          </div>
+          <h3 class="coding-name">CodeChef</h3>
+          <div class="coding-stats">
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Rating</span>
+              <span class="coding-stat-val coding-rating-accent">1300</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Max Rating</span>
+              <span class="coding-stat-val"> 1300</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Solved</span>
+              <span class="coding-stat-val">250+</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Max Division</span>
+              <span class="coding-stat-val">Div 3</span>
+            </div>
+          </div>
+          <a href="https://www.codechef.com/users/bhanu_2006" target="_blank" rel="noopener noreferrer" class="btn btn-secondary coding-btn">
+            View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- Codeforces Card -->
+        <div class="coding-card glass-card reveal">
+          <div class="coding-platform-icon">
+            <svg viewBox="0 0 24 24" fill="#3B5998" style="width: 50px; height: 50px;">
+              <path d="M4.5 7.5h3v15h-3zm6-4.5h3v19.5h-3zm6 9h3v10.5h-3z"/>
+            </svg>
+          </div>
+          <h3 class="coding-name" style="margin-top: 10px;">Codeforces</h3>
+          <div class="coding-stats">
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Rating</span>
+              <span class="coding-stat-val coding-rating-accent">1300+</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Max Rating</span>
+              <span class="coding-stat-val">1380</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Rank</span>
+              <span class="coding-stat-val">Pupil</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Solved</span>
+              <span class="coding-stat-val">150+</span>
+            </div>
+          </div>
+          <a href="https://codeforces.com/profile/upendra_06" target="_blank" rel="noopener noreferrer" class="btn btn-secondary coding-btn">
+            View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- HackerRank Card -->
+        <div class="coding-card glass-card reveal">
+          <div class="coding-platform-icon">
+            <i class="fa-brands fa-hackerrank" style="font-size: 3.5rem; color: #2EC866;"></i>
+          </div>
+          <h3 class="coding-name">HackerRank</h3>
+          <div class="coding-stats">
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Problem Solving</span>
+              <span class="coding-stat-val">5 Gold Stars</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Java Skill</span>
+              <span class="coding-stat-val">5 Gold Stars</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Certificates</span>
+              <span class="coding-stat-val">4 Verification Certs</span>
+            </div>
+            <div class="coding-stat-row">
+              <span class="coding-stat-label">Badge Rank</span>
+              <span class="coding-stat-val">Top 5%</span>
+            </div>
+          </div>
+          <a href="https://www.hackerrank.com/profile/23501A4448" target="_blank" rel="noopener noreferrer" class="btn btn-secondary coding-btn">
+            View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CERTIFICATIONS SECTION
+       ========================================================================== */ -->
+  <section id="certifications" class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Verified professional courses, industry standard accreditations, and technical pathways.</p>
+      </div>
+
+      <div class="certs-grid">
+        
+        <!-- Cert 1: Java Full Stack Virtual Internship -->
+        <div class="cert-card glass-card reveal">
+          <div class="cert-img-wrapper">
+            <div class="cert-placeholder-img">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-3-3 1.41-1.41L10 13.17l5.59-5.59L17 9l-7 7z"/></svg>
+            </div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Java Full Stack Development</h3>
+            <span class="cert-org">AICTE & EduSkills Academy</span>
+            <span class="cert-date">10-week Virtual Internship</span>
+            <a href="https://www.linkedin.com/posts/bhanu-upendra-harsha-kumar-b66005359_javafullstack-fullstackdevelopment-javadeveloper-activity-7436268436114247681-4Ufx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkq-D4BYk8yocyYbG0mgwKJXNKYxlFyrhk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary cert-btn">
+              Verify Link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 2: NPTEL Foundations of R Software -->
+        <div class="cert-card glass-card reveal">
+          <div class="cert-img-wrapper">
+            <div class="cert-placeholder-img">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-3-3 1.41-1.41L10 13.17l5.59-5.59L17 9l-7 7z"/></svg>
+            </div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Foundations of R Software Certification</h3>
+            <span class="cert-org">IIT Kanpur (NPTEL)</span>
+            <span class="cert-date">Score: 95% (Secured Top 2%)</span>
+            <a href="https://www.linkedin.com/posts/bhanu-upendra-harsha-kumar-b66005359_nptel-iitkanpur-rprogramming-activity-7394393855720120320-eiA1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkq-D4BYk8yocyYbG0mgwKJXNKYxlFyrhk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary cert-btn">
+              Verify Link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 3: Smart Interviews -->
+        <div class="cert-card glass-card reveal">
+          <div class="cert-img-wrapper">
+            <div class="cert-placeholder-img">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-3-3 1.41-1.41L10 13.17l5.59-5.59L17 9l-7 7z"/></svg>
+            </div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Smart Interviews Coding Certification</h3>
+            <span class="cert-org">Smart Interviews</span>
+            <span class="cert-date">Gold Certificate | Global Rank: 3619/50743</span>
+            <a href="https://www.linkedin.com/posts/bhanu-upendra-harsha-kumar-b66005359_smartinterviews-smartcoder-certificateofcompletion-activity-7415748209949487104-CKyJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkq-D4BYk8yocyYbG0mgwKJXNKYxlFyrhk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary cert-btn">
+              Verify Link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 4: MongoDB Developer Path -->
+        <div class="cert-card glass-card reveal">
+          <div class="cert-img-wrapper">
+            <div class="cert-placeholder-img">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-3-3 1.41-1.41L10 13.17l5.59-5.59L17 9l-7 7z"/></svg>
+            </div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">MongoDB Node.js Developer Path</h3>
+            <span class="cert-org">MongoDB</span>
+            <span class="cert-date">Node.js Developer Path Completion</span>
+            <a href="https://www.linkedin.com/posts/bhanu-upendra-harsha-kumar-b66005359_mongodb-nodejs-backenddevelopment-activity-7400012437728468992-8rs_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkq-D4BYk8yocyYbG0mgwKJXNKYxlFyrhk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary cert-btn">
+              Verify Link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 5: Quantum Fundamentals -->
+        <div class="cert-card glass-card reveal">
+          <div class="cert-img-wrapper">
+            <div class="cert-placeholder-img">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-3-3 1.41-1.41L10 13.17l5.59-5.59L17 9l-7 7z"/></svg>
+            </div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Quantum Fundamentals Program</h3>
+            <span class="cert-org">Amaravati Quantum Valley, Qubitech, & WISER</span>
+            <span class="cert-date">4-week Quantum Fundamentals Program</span>
+            <a href="https://www.linkedin.com/posts/bhanu-upendra-harsha-kumar-b66005359_quantumcomputing-quantumfundamentals-quantumtechnology-activity-7424424227539243008-hYNx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkq-D4BYk8yocyYbG0mgwKJXNKYxlFyrhk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary cert-btn">
+              Verify Link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ACHIEVEMENTS SECTION
+       ========================================================================== */ -->
+  <section id="achievements" class="reveal section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Key Milestones</span>
+        <h2 class="section-title">Major Achievements</h2>
+        <p class="section-subtitle">Summary statistics and key accomplishments highlighting problem-solving, academics, and practical engineering metrics.</p>
+      </div>
+
+      <!-- COUNTERS CONTAINER -->
+      <div class="achievements-grid">
+        
+        <!-- Counter 1 -->
+        <div class="achievement-counter-card glass-card">
+          <div class="ach-num counter-val" data-target="1650" data-suffix="+">0</div>
+          <h3 class="ach-label">LeetCode Rating</h3>
+          <p class="ach-sub">Top 15% globally in contests</p>
+        </div>
+
+        <!-- Counter 2 -->
+        <div class="achievement-counter-card glass-card">
+          <div class="ach-num counter-val" data-target="900" data-suffix="+">0</div>
+          <h3 class="ach-label">Problems Solved</h3>
+          <p class="ach-sub">Across LeetCode, CodeChef & CF</p>
+        </div>
+
+        <!-- Counter 3 -->
+        <div class="achievement-counter-card glass-card">
+          <div class="ach-num counter-val" data-target="3" data-suffix="*">0</div>
+          <h3 class="ach-label">CodeChef Stars</h3>
+          <p class="ach-sub">Division 2 competitive level</p>
+        </div>
+
+        <!-- Counter 4 -->
+        <div class="achievement-counter-card glass-card">
+          <div class="ach-num counter-val" data-target="5" data-suffix="+">0</div>
+          <h3 class="ach-label">Hackathons Attended</h3>
+          <p class="ach-sub">2 major project podium finishes</p>
+        </div>
+
+      </div>
+
+      <!-- BULLET SUMMARY CARD -->
+      <div class="achievement-list-card glass-card reveal">
+        <h3 class="achievement-list-title">
+          <i class="fa-solid fa-trophy"></i> Key Accomplishments
+        </h3>
+        <ul class="achievement-bullets">
+          <li><strong>LeetCode Knight Badge:</strong> Secured after crossing 1650+ rating in official LeetCode Biweekly Contests.</li>
+          <li><strong>Hackathon Winner (Podium Finish):</strong> Led a team of 4 to design a smart campus solution at a local hackathon.</li>
+          <li><strong>Elite Certification:</strong> Secured an "Elite + Silver" badge in NPTEL Course for Data Structures & Algorithms.</li>
+          <li><strong>Open Source Contributions:</strong> Contributed modular algorithms and responsive UI templates to developer-focused repositories on GitHub.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== */ -->
+  <section id="contact" class="section">
+    <div class="container">
+      
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Connect With Me</h2>
+        <p class="section-subtitle">Have a project, a job opportunity, or just want to chat about engineering? Drop a line!</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info Cards -->
+        <div class="contact-info reveal-left">
+          
+          <div class="contact-card-info glass-card">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-details">
+              <h4>Email</h4>
+              <a href="mailto:email@example.com">bhanuupendra.06@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card-info glass-card">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-info-details">
+              <h4>Phone</h4>
+              <p>+91 90322 14194</p>
+            </div>
+          </div>
+
+          <div class="contact-card-info glass-card">
+            <div class="contact-info-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-info-details">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/bhanu-upendra-harsha-kumar-b66005359/" target="_blank" rel="noopener noreferrer">linkedin.com/in/username</a>
+            </div>
+          </div>
+
+          <div class="contact-card-info glass-card">
+            <div class="contact-info-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-info-details">
+              <h4>GitHub</h4>
+              <a href="https://github.com/Bhanu-02-102006" target="_blank" rel="noopener noreferrer">github.com/username</a>
+            </div>
+          </div>
+
+          <div class="contact-card-info glass-card">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info-details">
+              <h4>Location</h4>
+              <p>Vijayawada, Andhra Pradesh, India</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Contact Form Container -->
+        <div class="contact-form-container glass-card reveal-right">
+          
+          <!-- Validation alerts -->
+          <div id="toast-success" class="form-toast success"></div>
+          <div id="toast-error" class="form-toast error"></div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="form-name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="form-email" class="form-control" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="form-subject" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="form-message" class="form-control" placeholder="Your Message (at least 10 characters)" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== */ -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="logo">
+          PORTFOLIO<span class="logo-dot"></span>
+        </div>
+        
+        <nav class="footer-nav">
+          <a href="#home" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#education" class="footer-nav-link">Education</a>
+          <a href="#skills" class="footer-nav-link">Skills</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </nav>
+
+        <div class="hero-socials" style="margin-bottom: 0;">
+          <div class="social-list">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:email@example.com" class="social-item"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026. All rights reserved.
+        </div>
+        <div class="footer-credits">
+          Designed & Developed by <span>Your Name</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back-to-Top Button -->
+  <div id="back-to-top" class="back-to-top"></div>
+
+  <!-- Custom JS Script Engine -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init({
+        publicKey: "rP-pAPK068TbNxsc8",
+    });
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
